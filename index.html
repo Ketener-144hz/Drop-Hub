@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restore - Produtos Premium de Qualidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">
+                        <span class="logo-text">Restore</span>
+                        <div class="logo-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i>Início</a></li>
+                        <li class="dropdown">
+                            <a href="#products" class="nav-link">
+                                <i class="fas fa-store"></i>Produtos
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#new">Lançamentos</a>
+                                <a href="#popular">Mais Vendidos</a>
+                                <a href="#sale">Promoções</a>
+                                <a href="#all">Ver Todos</a>
+                            </div>
+                        </li>
+                        <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i>Sobre</a></li>
+                        <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>Contato</a></li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar produtos...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="nav-buttons">
+                            <button class="icon-button">
+                                <i class="far fa-heart"></i>
+                                <span class="badge">0</span>
+                            </button>
+                            <button class="icon-button cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="badge" id="cart-count">0</span>
+                            </button>
+                            <button class="icon-button user-icon">
+                                <i class="far fa-user"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-title">Bem-vindo à <span class="highlight">Restore</span></h1>
+                <p class="hero-text">Produtos Premium para seu Estilo de Vida</p>
+                <div class="cta-buttons">
+                    <a href="#products" class="btn primary-btn">Comprar Agora</a>
+                    <a href="#about" class="btn secondary-btn">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="floating-image" style="--delay: 0s">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop" alt="Fones de Ouvido Premium">
+                </div>
+                <div class="floating-image" style="--delay: 0.2s">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop" alt="Relógio Inteligente">
+                </div>
+                <div class="floating-image" style="--delay: 0.4s">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop" alt="Óculos de Sol">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+    <section id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por Que Nos Escolher</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="features">
+                <div class="feature" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Dropshipping Premium</h3>
+                    <p>Entrega rápida e segura</p>
+                    <ul class="dropship-features">
+                        <li><i class="fas fa-check"></i> Envio para todo Brasil</li>
+                        <li><i class="fas fa-check"></i> Rastreamento em tempo real</li>
+                        <li><i class="fas fa-check"></i> Garantia de qualidade</li>
+                    </ul>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>30 Dias de Garantia</h3>
+                    <p>Devolução sem complicação</p>
+                    <ul class="dropship-features">
+                        <li><i class="fas fa-check"></i> Troca grátis</li>
+                        <li><i class="fas fa-check"></i> Reembolso garantido</li>
+                        <li><i class="fas fa-check"></i> Suporte 24/7</li>
+                    </ul>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Pagamento Seguro</h3>
+                    <p>Métodos de pagamento confiáveis</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-pix"></i>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                    <p class="payment-info">Parcele em até 12x</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i>
+                    <span>Todos</span>
+                </button>
+                <button class="filter-btn" data-filter="new">
+                    <i class="fas fa-star"></i>
+                    <span>Lançamentos</span>
+                </button>
+                <button class="filter-btn" data-filter="popular">
+                    <i class="fas fa-fire"></i>
+                    <span>Populares</span>
+                </button>
+                <button class="filter-btn" data-filter="sale">
+                    <i class="fas fa-tag"></i>
+                    <span>Promoções</span>
+                </button>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="new">
+                    <div class="product-badge">Novo</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop" alt="Fones de Ouvido Bluetooth">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Visualização Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fones de Ouvido Bluetooth Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <p class="price">R$ 299,99</p>
+                        <p class="installments">ou 12x de R$ 24,99</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="popular">
+                    <div class="product-badge popular">Popular</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop" alt="Smartwatch Premium">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Visualização Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartwatch Series X</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(256)</span>
+                        </div>
+                        <p class="price">R$ 899,99</p>
+                        <p class="installments">ou 12x de R$ 74,99</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sale">
+                    <div class="product-badge sale">-20%</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop" alt="Óculos de Sol">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Visualização Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Óculos de Sol Premium</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(189)</span>
+                        </div>
+                        <p class="price"><span class="original-price">R$ 499,99</span> R$ 399,99</p>
+                        <p class="installments">ou 12x de R$ 33,33</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="popular">
+                    <div class="product-badge popular">Popular</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500&h=500&fit=crop" alt="Smart Watch Ultra">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Visualização Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Watch Ultra</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">R$ 899,90</span>
+                            <span class="installment">10x de R$ 89,99</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="new">
+                    <div class="product-badge">Novo</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=500&h=500&fit=crop" alt="Fone Bluetooth Pro">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Visualização Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fone Bluetooth Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">R$ 449,90</span>
+                            <span class="installment">6x de R$ 74,98</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sale">
+                    <div class="product-badge sale">-30%</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&h=500&fit=crop" alt="Camera 4K">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Visualização Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camera 4K Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">R$ 1.299,90</span>
+                            <span class="price">R$ 909,93</span>
+                            <span class="installment">12x de R$ 75,83</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more-container">
+                <button class="load-more-btn">
+                    <span>Carregar Mais Produtos</span>
+                    <i class="fas fa-spinner fa-spin loading-icon"></i>
+                </button>
+                <p class="products-count">Mostrando <span class="current-count">6</span> de <span class="total-count">12</span> produtos</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a Restore</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Na Restore, acreditamos em fornecer produtos de alta qualidade que melhoram seu dia a dia. Nossa seleção cuidadosamente curada garante que você obtenha o melhor custo-benefício, mantendo nosso compromisso com qualidade e satisfação.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="10000">0</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="15000">0</span>
+                            <span class="stat-label">Produtos Vendidos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="27">0</span>
+                            <span class="stat-label">Estados Atendidos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Restore</h3>
+                    <p>Produtos premium para seu estilo de vida.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@restore.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Receba ofertas exclusivas!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Restore. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
