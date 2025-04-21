@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restore - Pedido Confirmado</title>
+    <link rel="stylesheet" href="./CSS/style_order-success.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Restore</span>
+                    </a>
+                </div>
+                <div class="nav-items">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html#products" class="nav-link">Produtos</a>
+                    <a href="index.html#about" class="nav-link">Sobre</a>
+                </div>
+                <div class="nav-icons">
+                    <a href="#search" class="icon-link">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="favorites.html" class="icon-link favorites-icon">
+                        <i class="fas fa-heart"></i>
+                        <span id="favorites-count">0</span>
+                    </a>
+                    <a href="checkout.html" class="icon-link cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                    <a href="account.html" class="icon-link">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="success-page">
+        <div class="container">
+            <div class="success-container">
+                <div class="success-animation">
+                    <div class="checkmark-circle">
+                        <div class="checkmark"></div>
+                    </div>
+                </div>
+                <h1>Pedido Confirmado!</h1>
+                <p class="success-message">Seu pedido foi processado com sucesso.</p>
+                <div class="order-details">
+                    <div class="order-number">
+                        <span>Número do Pedido:</span>
+                        <strong>#12347</strong>
+                    </div>
+                    <div class="order-date">
+                        <span>Data:</span>
+                        <strong id="current-date">21/04/2025</strong>
+                    </div>
+                    <div class="order-total">
+                        <span>Total:</span>
+                        <strong>R$ 399,90</strong>
+                    </div>
+                </div>
+                <p class="email-info">Um e-mail de confirmação foi enviado para você com todos os detalhes.</p>
+                <div class="success-actions">
+                    <a href="account.html" class="view-order-btn">Ver Meus Pedidos</a>
+                    <a href="index.html" class="continue-shopping-btn">Continuar Comprando</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./JS/order-success.js"></script>
+</body>
+</html>

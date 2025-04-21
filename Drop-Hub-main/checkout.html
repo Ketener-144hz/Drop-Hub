@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restore - Checkout</title>
+    <link rel="stylesheet" href="./CSS/style_Home.css">
+    <link rel="stylesheet" href="./CSS/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./JS/checkout.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Restore</span>
+                        <div class="logo-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="checkout-container">
+        <div class="container">
+            <div class="checkout-grid">
+                <div class="cart-summary">
+                    <h2>Resumo do Pedido</h2>
+                    <div class="cart-items">
+                        <!-- Items will be dynamically added here -->
+                    </div>
+                    <div class="cart-total">
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span class="amount">R$ 0,00</span>
+                        </div>
+                        <div class="shipping">
+                            <span>Frete:</span>
+                            <span class="amount">R$ 0,00</span>
+                        </div>
+                        <div class="total">
+                            <span>Total:</span>
+                            <span class="amount">R$ 0,00</span>
+                        </div>
+                        <div class="installments-info">
+                            <div class="installments-header">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Opções de Parcelamento</span>
+                            </div>
+                            <div class="installments-list">
+                                <!-- Parcelas serão adicionadas dinamicamente -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-form">
+                    <h2>Informações de Pagamento</h2>
+                    <form id="payment-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group card-input-group">
+                            <label for="card">Número do Cartão</label>
+                            <div class="card-input-wrapper">
+                                <input type="text" id="card" required>
+                                <div class="card-icons">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-amex"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Validade</label>
+                                <input type="text" id="expiry" placeholder="MM/AA" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="installments">Selecione o número de parcelas</label>
+                            <select id="installments" required>
+                                <!-- Opções de parcelas serão adicionadas dinamicamente -->
+                            </select>
+                        </div>
+                        <button type="submit" class="btn primary-btn">
+                            <i class="fas fa-lock"></i>
+                            Finalizar Compra
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
